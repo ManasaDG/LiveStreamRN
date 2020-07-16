@@ -1,0 +1,15 @@
+{
+    "demp": {
+        "awscloudformation": {
+            "AuthRoleName": "amplify-livestreamsrn-demp-104208-authRole",
+            "UnauthRoleArn": "arn:aws:iam::427025378311:role/amplify-livestreamsrn-demp-104208-unauthRole",
+            "AuthRoleArn": "arn:aws:iam::427025378311:role/amplify-livestreamsrn-demp-104208-authRole",
+            "Region": "us-east-2",
+            "DeploymentBucketName": "amplify-livestreamsrn-demp-104208-deployment",
+            "UnauthRoleName": "amplify-livestreamsrn-demp-104208-unauthRole",
+            "StackName": "amplify-livestreamsrn-demp-104208",
+            "StackId": "arn:aws:cloudformation:us-east-2:427025378311:stack/amplify-livestreamsrn-demp-104208/bf5aee60-c6b1-11ea-b3c8-02f6456406e2",
+            "AmplifyAppId": "d20fwa1m5yigic"
+        }
+    }
+}
