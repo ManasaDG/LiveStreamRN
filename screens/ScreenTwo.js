@@ -1,5 +1,5 @@
 import React from 'react';
-import { View, StyleSheet,Button } from 'react-native';
+import { View, StyleSheet,Button,SafeAreaView } from 'react-native';
 
 import ScreenName from '../components/ScreenName.js'
 import {  NodeCameraView } from 'react-native-nodemediaclient';
@@ -14,8 +14,9 @@ export default class ScreenTwo extends React.Component {
     var publish="off";
     return (
       <View style={styles.container}>
+         <SafeAreaView>
          <NodeCameraView 
-            style={{ height: 400 }}
+            style={{ height: 400 ,width:1000}}
             ref={(vb) => { this.vb = vb }}
             outputUrl = {"rtmp://global-live.mux.com:5222/app/7b73850b-42d5-4b01-a304-06593f89145b"}
             camera={{ cameraId: 1, cameraFrontMirror: true }}
@@ -40,6 +41,7 @@ export default class ScreenTwo extends React.Component {
             title="Publish"
             color="#841584"
             />
+            </SafeAreaView>
       </View>
     );
   }

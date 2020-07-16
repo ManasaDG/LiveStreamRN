@@ -93,11 +93,11 @@ export default class ScreenOne extends Component<Props> {
     return (
         <View style={[styles.container]}>{this.state.playVideo=="none" &&(
         <View>
+          <Text style={styles.titleStyle}>Videos</Text>
         {
           this.state.films.map((y) => {
             return (
               <View> 
-              
                 <View style={styles.rowContainer}>
                     <Image style={[styles.logo]}
                       source={y.thumbNailsUrls}
@@ -192,4 +192,7 @@ const styles = StyleSheet.create({
     bottom: 0,
     right: 0,
   },
+  titleStyle:{
+    fontSize:30
+  }
 });

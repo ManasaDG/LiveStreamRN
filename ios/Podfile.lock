@@ -68,6 +68,7 @@ PODS:
     - glog
   - glog (0.3.5)
   - JKBigInteger2 (0.0.5)
+  - NodeMediaClient (2.7.9)
   - OpenSSL-Universal (1.0.2.19):
     - OpenSSL-Universal/Static (= 1.0.2.19)
   - OpenSSL-Universal/Static (1.0.2.19)
@@ -237,7 +238,16 @@ PODS:
     - React-cxxreact (= 0.63.1)
     - React-jsi (= 0.63.1)
   - React-jsinspector (0.63.1)
+  - react-native-document-picker (3.5.3):
+    - React
   - react-native-netinfo (5.9.4):
+    - React
+  - react-native-nodemediaclient (0.2.0):
+    - NodeMediaClient (= 2.7.9)
+    - React
+    - react-native-nodemediaclient/RCTNodeMediaClient (= 0.2.0)
+  - react-native-nodemediaclient/RCTNodeMediaClient (0.2.0):
+    - NodeMediaClient (= 2.7.9)
     - React
   - react-native-safe-area-context (3.1.1):
     - React
@@ -313,6 +323,8 @@ PODS:
     - React
   - RNGestureHandler (1.6.1):
     - React
+  - RNReanimated (1.9.0):
+    - React
   - RNScreens (2.9.0):
     - React
   - RNVectorIcons (7.0.0):
@@ -358,7 +370,9 @@ DEPENDENCIES:
   - React-jsi (from `../node_modules/react-native/ReactCommon/jsi`)
   - React-jsiexecutor (from `../node_modules/react-native/ReactCommon/jsiexecutor`)
   - React-jsinspector (from `../node_modules/react-native/ReactCommon/jsinspector`)
+  - react-native-document-picker (from `../node_modules/react-native-document-picker`)
   - "react-native-netinfo (from `../node_modules/@react-native-community/netinfo`)"
+  - react-native-nodemediaclient (from `../../../node_modules/react-native-nodemediaclient`)
   - react-native-safe-area-context (from `../node_modules/react-native-safe-area-context`)
   - react-native-video (from `../node_modules/react-native-video`)
   - React-RCTActionSheet (from `../node_modules/react-native/Libraries/ActionSheetIOS`)
@@ -374,6 +388,7 @@ DEPENDENCIES:
   - RNAWSCognito (from `../node_modules/amazon-cognito-identity-js`)
   - "RNCMaskedView (from `../node_modules/@react-native-community/masked-view`)"
   - RNGestureHandler (from `../node_modules/react-native-gesture-handler`)
+  - RNReanimated (from `../node_modules/react-native-reanimated`)
   - RNScreens (from `../node_modules/react-native-screens`)
   - RNVectorIcons (from `../node_modules/react-native-vector-icons`)
   - Yoga (from `../node_modules/react-native/ReactCommon/yoga`)
@@ -391,6 +406,7 @@ SPEC REPOS:
     - Flipper-RSocket
     - FlipperKit
     - JKBigInteger2
+    - NodeMediaClient
     - OpenSSL-Universal
     - YogaKit
 
@@ -425,8 +441,12 @@ EXTERNAL SOURCES:
     :path: "../node_modules/react-native/ReactCommon/jsiexecutor"
   React-jsinspector:
     :path: "../node_modules/react-native/ReactCommon/jsinspector"
+  react-native-document-picker:
+    :path: "../node_modules/react-native-document-picker"
   react-native-netinfo:
     :path: "../node_modules/@react-native-community/netinfo"
+  react-native-nodemediaclient:
+    :path: "../../../node_modules/react-native-nodemediaclient"
   react-native-safe-area-context:
     :path: "../node_modules/react-native-safe-area-context"
   react-native-video:
@@ -457,6 +477,8 @@ EXTERNAL SOURCES:
     :path: "../node_modules/@react-native-community/masked-view"
   RNGestureHandler:
     :path: "../node_modules/react-native-gesture-handler"
+  RNReanimated:
+    :path: "../node_modules/react-native-reanimated"
   RNScreens:
     :path: "../node_modules/react-native-screens"
   RNVectorIcons:
@@ -481,6 +503,7 @@ SPEC CHECKSUMS:
   Folly: b73c3869541e86821df3c387eb0af5f65addfab4
   glog: 40a13f7840415b9a77023fbcae0f1e6f43192af3
   JKBigInteger2: e91672035c42328c48b7dd015b66812ddf40ca9b
+  NodeMediaClient: 69e663a8b8d13b38ad556c7234a3ea218044469c
   OpenSSL-Universal: 8b48cc0d10c1b2923617dfe5c178aa9ed2689355
   RCTRequired: d9b1a9e6fa097744ca3ede59f86a35096df7202b
   RCTTypeSafety: c227cd061983e9e964115afbc4e8730d6a6f1395
@@ -492,7 +515,9 @@ SPEC CHECKSUMS:
   React-jsi: b32a31da32e030f30bbf9a8d3a9c8325df9e793f
   React-jsiexecutor: 7ab9cdcdd18d57652fb041f8a147fe9658d4e00a
   React-jsinspector: 2e28bb487e42dda6c94dbfa0c648d1343767a0fb
+  react-native-document-picker: b1b4a52c0051e10642c54cfc10933759e8ccdda4
   react-native-netinfo: eed0fb1d6a9424e98ce686f92aad62ff427d4bc9
+  react-native-nodemediaclient: 6cf07983d643dc03af193962d47c1e4a415b2afa
   react-native-safe-area-context: 4c3249e4840225c61fcd215b136af0a737bccb79
   react-native-video: aa527b0acb37f94c4491e70df0274cb26979405d
   React-RCTActionSheet: 1702a1a85e550b5c36e2e03cb2bd3adea053de95
@@ -508,6 +533,7 @@ SPEC CHECKSUMS:
   RNAWSCognito: 08567d55159547e8ac2a1ce4350cd44a67f3db96
   RNCMaskedView: f5c7d14d6847b7b44853f7acb6284c1da30a3459
   RNGestureHandler: 8f09cd560f8d533eb36da5a6c5a843af9f056b38
+  RNReanimated: b5ccb50650ba06f6e749c7c329a1bc3ae0c88b43
   RNScreens: c526239bbe0e957b988dacc8d75ac94ec9cb19da
   RNVectorIcons: da6fe858f5a65d7bbc3379540a889b0b12aa5976
   Yoga: d5bd05a2b6b94c52323745c2c2b64557c8c66f64
