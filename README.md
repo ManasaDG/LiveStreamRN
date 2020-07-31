@@ -1,4 +1,4 @@
-# Tribal Networkd
+# Tribal Network
 
 A [Tribal Studio](https://www.tribaliii.com/) app for filmmakers. Soon to be deployed [here](https://www.tribalnetwork.org/)
 
